@@ -239,6 +239,26 @@ function sumDigits(num){
 
 }
 
+//removing duplicates 
+
+
+
+function removeDuplicate(arrayDuplicate)
+{
+  let notDuplicate=[];
+  let element;
+  for(let i=0;i<arrayDuplicate.length;i++){
+    if(!notDuplicate.includes(arrayDuplicate[i]))
+    {
+      notDuplicate.push(arrayDuplicate[i])
+    }
+  } 
+  return notDuplicate;
+}
+
+console.log(removeDuplicate([1, 2, 2, 3, 4, 4, 5]));
+
+
 
 
 

@@ -438,3 +438,86 @@ let userlist = [
 ];
 
 console.log(userlist[1].name);  
+//finding the frequent number
+
+// function findmostfrequent(arr){
+//   let frequency={};
+//     let maxcount=0;
+//     let mostfrequent;
+//     for(let num  of arr){
+//       frequency[num]=(frequency[num]|| 0)
+//       if(frequency[num]>mostcount){
+//         mostfrequent=num;
+//         maxcount=frequency[num];
+//       }
+//     }
+
+//   return mostfrequent;
+// }
+// let numbbers = [1, 2, 3, 2, 4, 5, 2, 6];
+// console.log("The most frequent number is:", findmostfrequent(numbbers));
+
+//creating an object challenge
+let people={
+  friends:[],
+}
+let person1={
+  name:"john",
+  secondname:"fmatrix",
+  ids:234,
+}
+let person2={
+  name:"john",
+  secondname:"mark",
+  ids:235,
+}
+let person3={
+  name:"violent",
+  secondname:"fmatrix",
+  ids:234,
+}
+people.friends.push(person1,person2,person3);
+console.log("The friends are:", people.friends);
+
+
+//challnge on array of ojects
+let stores = [];
+
+let item1 = {
+  name: "milk",
+  model: "mlk",
+  cost: 70,
+  quantity: 10
+};
+
+let item2 = {
+  name: "cabbage",
+  model: "cbg",
+  cost: 50,
+  quantity: 25
+};
+
+let item3 = {
+  name: "carrot",
+  model: "crt",
+  cost: 30,
+  quantity: 18
+};
+
+stores.push(item1, item2, item3);
+
+console.log("The store items are:", stores);
+console.log("Quantity of third item:", stores[2].quantity);
+
+// Add a new item
+let item4 = {
+  name: "bread",
+  model: "brd",
+  cost: 45,
+  quantity: 12
+};
+
+stores.push(item4);
+console.log("New item added. All store items:", stores);
+console.log("Quantity of bread:", stores[3].quantity);
+
